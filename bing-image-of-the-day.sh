@@ -21,4 +21,4 @@ imgURL="http://www.bing.com$imgPath"
 
 curl -o $imgFolder/$imgFile -s $imgURL
 
-gsettings set org.gnome.desktop.background picture-uri "file://$imgFolder/$imgFile"
+command -v gsettings>/dev/null 2>&1 && gsettings set org.gnome.desktop.background picture-uri "file://$imgFolder/$imgFile"
