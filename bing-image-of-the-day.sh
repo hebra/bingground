@@ -8,7 +8,7 @@
 # Released under term of Simplified BSD License
 #
 
-imgFolder=~/.local/share/bingPirctureOfTheDay
+imgFolder=~/.local/share/bingground
 mkdir -p $imgFolder
 
 imgJSON=$(curl -s "http://www.bing.com/HPImageArchive.aspx?format=js&idx=0&n=1&mkt=en-AU")
